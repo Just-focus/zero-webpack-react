@@ -1,0 +1,11 @@
+{
+	"extends": ["stylelint-config-standard"],
+	"plugin": ["stylelint-order"],
+	"customSyntax": "postcss-scss",
+	"rules": {
+		"indentation": 2,
+		"no-descending-specificity": null,
+		"function-no-unknown": null,
+		"at-rule-no-unknown": null
+	}
+}

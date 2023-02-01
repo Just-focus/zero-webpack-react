@@ -1,0 +1,94 @@
+@import "normalize.css";
+// add
+@import "@zerico/react/dist/packages/overlay/overlay.scss";
+@import "@zerico/react/dist/packages/icon/icon.scss";
+
+// custom
+body {
+  font-family: PingFangSC-Regular, "PingFang SC", sans-serif;
+  -webkit-overflow-scrolling: touch; /* 解决ios滑动不流畅问题 */
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+// reset css
+ul,
+li,
+dl,
+dt {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+dd {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+i {
+  font-style: normal;
+}
+
+textarea {
+  border: 0;
+  color: #ccc;
+  font-size: 14px;
+  height: 125px;
+  line-height: 20px;
+  outline: none;
+  padding: 0 15px;
+  resize: none;
+  width: 100%;
+}
+
+// 闪现半透明灰色背景色问题
+a,
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-tap-highlight-color: rgb(0 0 0 / 0%);
+}
+
+// input 框无法输入问题
+input {
+  padding: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"] {
+  appearance: textfield;
+}
