@@ -12,7 +12,7 @@ module.exports = {
 			jsx: true, // Allows for the parsing of JSX
 		},
 	},
-	ignorePatterns: ['.babelrc.js', 'configs/*.js'],
+	ignorePatterns: ['configs/*.js', '**/__tests__/*.js'],
 	rules: {
 		'react/display-name': 'off',
 		'react/no-unescaped-entities': 'off',

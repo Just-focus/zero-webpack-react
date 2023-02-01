@@ -17,7 +17,7 @@
 		"skipLibCheck": true, // 跳过导入第三方 lib 声明文件的类型检查，默认为 true
 		"forceConsistentCasingInFileNames": true, // 强制在文件名中使用一致的大小写，默认为 true
 		"moduleResolution": "Node", // 指定使用哪种模块解析策略，默认为 Classic
-		"noImplicitAny": true,
+		"noImplicitAny": false, // 是否在表达式和声明上有隐含的any类型时报错
 		"allowSyntheticDefaultImports": true,
 		"allowJs": true,
 		"paths": {

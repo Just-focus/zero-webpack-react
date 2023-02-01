@@ -1,10 +1,11 @@
 import React from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import HomePage from '@/pages/home';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <div>12</div>,
+		element: <HomePage labelOn="On" labelOff="Off" />,
 	},
 ]);
 

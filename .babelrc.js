@@ -10,7 +10,7 @@ module.exports = api => {
 			[
 				'@babel/preset-react',
 				{
-					development: !api.env('production'),
+					development: api.env('development'),
 					runtime: 'automatic',
 				},
 			],
@@ -27,7 +27,7 @@ module.exports = api => {
 				},
 				'@zerico/react',
 			],
-			!api.env('production') && 'react-refresh/babel',
+			api.env('development') && 'react-refresh/babel',
 		].filter(Boolean),
 	};
 };
