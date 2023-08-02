@@ -1,5 +1,4 @@
 // 基础配置
-
 const ESLintPlugin = require('eslint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -90,7 +89,8 @@ module.exports = {
 		isDevelopment && new ReactRefreshWebpackPlugin(),
 	].filter(Boolean),
 	resolve: {
-		extensions: ['.tsx', '.ts', '.js', '.jsx', '.scss', '.css', '.wasm'], //后缀名自动补全
+		// 后缀名自动补全 默认值 ['.js', '.json', '.wasm']
+		extensions: ['...', '.tsx', '.ts', '.jsx', '.scss', '.css'],
 		alias: {
 			'@': paths.resolvePath('src'),
 		},
